@@ -33,9 +33,6 @@ And finally if you want to apply it to controllers with certain annotations. The
 `@ExceptionHandler` allows you to define a method that, as the name suggests, handle exceptions. If you weren't using `@ControllerAdvice` the code for handling these exceptions would be in the controllers themselves, which could add quite a bit of duplication and clutter to the class and leading to it not being as "clean". You could define the `@ExceptionHandler` methods into a base class that the controller extends to separate the code, this method is not perfect and comes with the issue that every controller where you need this global exception handling will now need to extend the base controller. Therefore when you create a new controller and forget to extend this base class, you are now no longer handling some exceptions and might get bitten in the butt later on. Using `@ControllerAdvice` along with `@ExceptionHandler` prevents this by providing global (and more specific) error handling so you don't need to remember to implement them yourself or extend another class every time.
 
 Below is a basic example of a class annotated with `@ControllerAdvice`.
-
-@[PersonControllerAdvice]({"stubs": ["src/main/java/com/lankydan/Application.java"],"command": "com.lankydan.myTest#hello"})
-
 ```java
 @ControllerAdvice
 @RequestMapping(produces = "application/vnd.error+json")
