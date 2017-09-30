@@ -2,7 +2,7 @@
 
 `@ControllerAdvice` is a annotation provided by Spring allowing you to write global code that can be applied to a wide range of controllers, varying from all controllers to a chosen package or even a specific annotation. In this brief tutorial we will focus on handling exceptions using `@ControllerAdvice` and `@ExceptionHandler`(`@InitBinder` and `@ModalAttribute` can also be used with `@ControllerAdvice`).
 
-I will be making use of the `VndErrors` class in this post and therefore the required dependencies will reflect that. `spring-boot-starter-hateoas` is included to allow `VndErrors` to be used, if you do not wish to use this class `spring-boot-start-web` will be sufficient and will still provide access to everything else used in this post.
+I will be making use of the `VndErrors` class in this post and therefore the required dependencies will reflect that. `spring-boot-starter-hateoas` is included to allow `VndErrors` to be used, if you do not wish to use this class `spring-boot-starter-web` will be sufficient and will still provide access to everything else used in this post.
 ```xml
 <dependency>
   <groupId>org.springframework.boot</groupId>
