@@ -4,6 +4,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lankydan.entity.person.Person;
 import com.lankydan.respository.person.PersonRepository;
 import com.lankydan.respository.person.exception.PersonNotFoundException;
+import com.lankydan.rest.person.PersonController;
+import com.lankydan.rest.person.PersonControllerAdvice;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
