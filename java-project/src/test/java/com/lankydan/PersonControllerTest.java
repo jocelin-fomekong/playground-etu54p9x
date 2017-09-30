@@ -1,4 +1,4 @@
-package com.lankydan.rest.person;
+package com.lankydan;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lankydan.entity.person.Person;

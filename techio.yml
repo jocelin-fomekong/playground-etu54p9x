@@ -1,4 +1,5 @@
-title: Spring 5 Project
+title: Global exception handling with @ControllerAdvice
+
 plan:
 - title: Welcome
   statement: markdowns/welcome.md
