@@ -34,7 +34,7 @@ And finally if you want to apply it to controllers with certain annotations. The
 
 Below is a basic example of a class annotated with `@ControllerAdvice`.
 
-@[PersonControllerAdvice]({"stubs": ["src/main/java/com/lankydan/rest/person/PersonControllerAdvice.java"],"command": "com.lankydan.PersonControllerTest#getPersonThatDoesNotExistReturnsError"})
+@[PersonControllerAdvice]({"stubs": ["src/main/java/com/lankydan/rest/person/PersonControllerAdvice.java"],"command": "com.lankydan.myTest#hello"})
 
 ```java
 @ControllerAdvice
